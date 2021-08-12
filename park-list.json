@@ -1,0 +1,382 @@
+[{
+        "location": "Öræfi, Iceland",
+        "parkName": "Vatnajökull",
+        "coords": "24&deg;36'3\"S 46&deg;41'58\"E",
+        "area": "760 km&sup2",
+        "established": "1998",
+        "visitors": "~1,000,000 per year",
+        "fact": "Largest glacier in Iceland",
+        "slideshow": [
+            "../img/vatnajokull1.jpg",
+            "../img/vatnajokull2.jpg",
+            "../img/vatnajokull3.jpg"
+        ],
+        "bgClass": "vatnajokull"
+    },
+    {
+        "location": "Wyoming, USA",
+        "parkName": "Yellowstone",
+        "coords": "44&deg;35'47\"N 110&deg;32'50\"W",
+        "area": "8,983.18 km&sup2;",
+        "established": "1872",
+        "visitors": "~4,000,000 per year",
+        "fact": "Over 10,000 hydrothermal features",
+        "slideshow": [
+            "../img/yellowstone1.jpg",
+            "../img/yellowstone2.jpg",
+            "../img/yellowstone3.jpg"
+        ],
+        "bgClass": "yellowstone"
+    },
+    {
+        "location": "Tanzania, Africa",
+        "parkName": "Serengeti",
+        "coords": "2&deg;20'0\"S 34&deg;34'0\"E",
+        "area": "14,763 km&sup2;",
+        "established": "1951",
+        "visitors": "~350,000 per year",
+        "fact": "Home of the \"Great Migration\"",
+        "slideshow": [
+            "../img/serengeti1.jpg",
+            "../img/serengeti2.jpg",
+            "../img/serengeti3.jpg"
+        ],
+        "bgClass": "serengeti"
+    },
+    {
+        "location": "Ecuador, S. America",
+        "parkName": "Gal&agrave;pagos",
+        "coords": "0&deg;20'0\"S 90&deg;0'0\"W",
+        "area": "7995.4 km&sup2;",
+        "established": "1959",
+        "visitors": "~150,000 per year",
+        "fact": "12 hours of sunlight all the year",
+        "slideshow": [
+            "../img/galapagos1.jpg",
+            "../img/galapagos2.jpg",
+            "../img/galapagos3.jpg",
+            "../img/galapagos4.jpg"
+        ],
+        "bgClass": "galapagos"
+    },
+    {
+        "location": "Alberta, Canada",
+        "parkName": "Banff",
+        "coords": "51&deg;30'0\"N 116&deg;0'0\"W",
+        "area": "6,641 km&sup2;",
+        "established": "1885",
+        "visitors": "~3,600,000 per year",
+        "fact": "Over 1,600 kilometers of hiking trails",
+        "slideshow": [
+            "../img/banff1.jpg",
+            "../img/banff2.jpg",
+            "../img/banff3.jpg"
+        ],
+        "bgClass": "banff"
+    },
+    {
+        "location": "California, USA",
+        "parkName": "Yosemite",
+        "coords": "37&deg;44'33\"N 119&deg;32'15\"W",
+        "area": "3,028.81 km&sup2;",
+        "established": "1890",
+        "visitors": "~2,300,000 per year",
+        "fact": "Birthplace of rock climbing for sport",
+        "slideshow": [
+            "../img/yosemite1.jpg",
+            "../img/yosemite2.jpg",
+            "../img/yosemite3.jpg"
+        ],
+        "bgClass": "yosemite"
+    },
+    {
+        "location": "Utah, USA",
+        "parkName": "Zion",
+        "coords": "37&deg;18'0\"N 113&deg;0'0\"W",
+        "area": "593.26 km&sup2;",
+        "established": "1919",
+        "visitors": "~3,600,000 per year",
+        "fact": "\"Zion\" is ancient Hebrew for \"refuge\"",
+        "slideshow": [
+            "../img/zion1.jpg",
+            "../img/zion2.jpg",
+            "../img/zion3.jpg",
+            "../img/zion4.jpg"
+        ],
+        "bgClass": "zion"
+    },
+    {
+        "location": "Namche, Nepal",
+        "parkName": "Sagarmāthā",
+        "coords": "27&deg;56'0\"N 86&deg;44'0\"E",
+        "area": "1,148 km&sup2;",
+        "established": "1976",
+        "visitors": "~30,000 per year",
+        "fact": "Contains Mt. Everest",
+        "slideshow": [
+            "../img/sagarmatha1.jpg",
+            "../img/sagarmatha2.jpg",
+            "../img/sagarmatha3.jpg"
+        ],
+        "bgClass": "sagarmatha"
+    },
+    {
+        "location": "Cappadocia, Turkey",
+        "parkName": "Göreme",
+        "coords": "38&deg;39'10\"N 34&deg;51'47\"E",
+        "area": "100 km&sup2;",
+        "established": "1985",
+        "visitors": "~4,000,000 per year",
+        "fact": "Landscape formed by volcanic erosion",
+        "slideshow": [
+            "../img/goreme1.jpg",
+            "../img/goreme2.jpg",
+            "../img/goreme3.jpg"
+        ],
+        "bgClass": "goreme"
+    },
+    {
+        "location": "Southland, New Zealand",
+        "parkName": "Fiordland",
+        "coords": "45&deg;25'0\"S 167&deg;43'0\"E",
+        "area": "12,607 km&sup2;",
+        "established": "1952",
+        "visitors": "~1,200,000 per year",
+        "fact": "Brief gold rush in the 1890s",
+        "slideshow": [
+            "../img/fiordland1.jpg",
+            "../img/fiordland2.jpg",
+            "../img/fiordland3.jpg",
+            "../img/fiordland4.jpg"
+        ],
+        "bgClass": "fiordland"
+    },
+    {
+        "location": "Namibia, S. Africa",
+        "parkName": "Etosha",
+        "coords": "18&deg;56'43\"S 15&deg;53'52\"E",
+        "area": "22,270 km&sup2;",
+        "established": "1907",
+        "visitors": "~200,000 per year",
+        "fact": "'Etosha' means 'Great White Place'",
+        "slideshow": [
+            "../img/etosha1.jpg",
+            "../img/etosha2.jpg",
+            "../img/etosha3.jpg"
+        ],
+        "bgClass": "etosha"
+    },
+    {
+        "location": "Hunan, China",
+        "parkName": "Zhangjiajie",
+        "coords": "29&deg;9'39\"N 110&deg;24'58\"E",
+        "area": "48.1 km&sup2;",
+        "established": "1982",
+        "visitors": "~4,000,000 per year",
+        "fact": "China's first national park",
+        "slideshow": [
+            "../img/zhangjiajie1.jpg",
+            "../img/zhangjiajie2.jpg",
+            "../img/zhangjiajie3.jpg"
+        ],
+        "bgClass": "zhangjiajie"
+    },
+    {
+        "location": "Hai Phong, Vietnam",
+        "parkName": "Cát Bà",
+        "coords": "20&deg;47'50\"N 107&deg;24'25\"E",
+        "area": "152 km&sup2;",
+        "established": "1986",
+        "visitors": "~2,500,000 per year",
+        "fact": "1,561 recorded species of flora",
+        "slideshow": [
+            "../img/catba1.jpg",
+            "../img/catba2.jpg",
+            "../img/catba3.jpg"
+        ],
+        "bgClass": "catba"
+    },
+    {
+        "location": "Alaska, USA",
+        "parkName": "Denali",
+        "coords": "63&deg;20'0\"N 150&deg;30'0\"W",
+        "area": "19,185.79 km&sup2;",
+        "established": "1917",
+        "visitors": "~595,000 per year",
+        "fact": "Visible from 200 miles away",
+        "slideshow": [
+            "../img/denali1.jpg",
+            "../img/denali2.jpg",
+            "../img/denali3.jpg"
+        ],
+        "bgClass": "denali"
+    },
+    {
+        "location": "Kuusamo, Finland",
+        "parkName": "Oulanka",
+        "coords": "66&deg;22'32\"N 29&deg;20'19\"E",
+        "area": "270 km&sup2;",
+        "established": "1956",
+        "visitors": "~170,000 per year",
+        "fact": "Borders Paanajärvi National Park",
+        "slideshow": [
+            "../img/oulanka1.jpg",
+            "../img/oulanka2.jpg",
+            "../img/oulanka3.jpg"
+        ],
+        "bgClass": "oulanka"
+    },
+    {
+        "location": "Bavaria, Germany",
+        "parkName": "Berchtesgaden",
+        "coords": "47&deg;32'0\"N 12&deg;55'0\"E",
+        "area": "210 km&sup2",
+        "established": "1978",
+        "visitors": "~350,000 per year",
+        "fact": "Only German national park in the Alps",
+        "slideshow": [
+            "../img/berchtesgaden1.jpg",
+            "../img/berchtesgaden2.jpg",
+            "../img/berchtesgaden3.jpg",
+            "../img/berchtesgaden4.jpg"
+        ],
+        "bgClass": "berchtesgaden"
+    },
+    {
+        "location": "Bláskógabyggð, Iceland",
+        "parkName": "Thingvellir",
+        "coords": "64&deg;15'13.7\"N 21&deg;2'14.1\"E",
+        "area": "92.7 km&sup2",
+        "established": "1930",
+        "visitors": "~1,300,000 per year",
+        "fact": "World's oldest existing parliament",
+        "slideshow": [
+            "../img/thingvellir1.jpg",
+            "../img/thingvellir2.jpg",
+            "../img/thingvellir3.jpg",
+            "../img/thingvellir4.jpg"
+        ],
+        "bgClass": "thingvellir"
+    },
+    {
+        "location": "Lapland, Sweden",
+        "parkName": "Abisko",
+        "coords": "68&deg;19'0\"N 18&deg;41'0\"E",
+        "area": "77 km&sup2",
+        "established": "1909",
+        "visitors": "~500,000 per year",
+        "fact": "The Sami have lived here thousands of years",
+        "slideshow": [
+            "../img/abisko1.jpg",
+            "../img/abisko2.jpg",
+            "../img/abisko3.jpg"
+        ],
+        "bgClass": "abisko"
+    },
+    {
+        "location": "Killarney, Ireland",
+        "parkName": "Killarney",
+        "coords": "51&deg;59'36\"N 9&deg;33'26\"W",
+        "area": "102.89 km&sup2",
+        "established": "1932",
+        "visitors": "~1,100,000 per year",
+        "fact": "Ireland's first national park",
+        "slideshow": [
+            "../img/killarney1.jpg",
+            "../img/killarney2.jpg",
+            "../img/killarney3.jpg"
+        ],
+        "bgClass": "killarney"
+    },
+    {
+        "location": "Florida, USA",
+        "parkName": "Everglades",
+        "coords": "25&deg;18'45\"N 80&deg;41'15\"W",
+        "area": "6,106 km&sup2",
+        "established": "1934",
+        "visitors": "~600,000 per year",
+        "fact": "3rd largest national park in the contiguous US",
+        "slideshow": [
+            "../img/everglades1.jpg",
+            "../img/everglades2.jpg",
+            "../img/everglades3.jpg"
+        ],
+        "bgClass": "everglades"
+    },
+    {
+        "location": "California, USA",
+        "parkName": "Sequoia",
+        "coords": "36&deg;33'53\"N 118&deg;46'24\"W",
+        "area": "1,635 km&sup2",
+        "established": "1890",
+        "visitors": "~1,230,000 per year",
+        "fact": "First park created to protect a living organism",
+        "slideshow": [
+            "../img/sequoia4.jpg",
+            "../img/sequoia2.jpg",
+            "../img/sequoia3.jpg"
+        ],
+        "bgClass": "sequoia"
+    },
+    {
+        "location": "Northwest Slovenia",
+        "parkName": "Triglav",
+        "coords": "46&deg;20'0\"N 13&deg;46'\"E",
+        "area": "880 km&sup2",
+        "established": "1981",
+        "visitors": "~1,600,000 per year",
+        "fact": "Slovenia's only national park",
+        "slideshow": [
+            "../img/triglav1.jpg",
+            "../img/triglav2.jpg",
+            "../img/triglav3.jpg",
+            "../img/triglav4.jpg"
+        ],
+        "bgClass": "triglav"
+    },
+    {
+        "location": "Norte, Portugal",
+        "parkName": "Peneda-Gerês",
+        "coords": "41&deg;43'49\"N 8&deg;9'42\"W",
+        "area": "696 km&sup2",
+        "established": "1971",
+        "visitors": "~93,000 per year",
+        "fact": "Oldest signs of human presence only ~3000 BC",
+        "slideshow": [
+            "../img/peneda1.jpg",
+            "../img/peneda2.jpg",
+            "../img/peneda3.jpg"
+        ],
+        "bgClass": "peneda-geres"
+    },
+    {
+        "location": "Savoie, France",
+        "parkName": "Vanoise",
+        "coords": "45&deg;20'0\"N 6&deg;50'0\"E",
+        "area": "534 km&sup2",
+        "established": "1963",
+        "visitors": "~360,000 per year",
+        "fact": "First national park in France",
+        "slideshow": [
+            "../img/vanoise1.jpg",
+            "../img/vanoise2.jpg",
+            "../img/vanoise3.jpg"
+        ],
+        "bgClass": "vanoise"
+    },
+    {
+        "location": "Rajasthan, India",
+        "parkName": "Ranthambore",
+        "coords": "26&deg;1'2\"N 76&deg;30'09\"E",
+        "area": "1,334 km&sup2",
+        "established": "1980",
+        "visitors": "~432,000 per year",
+        "fact": "Flora includes 539 species of flowering plants",
+        "slideshow": [
+            "../img/ranthambore1.jpg",
+            "../img/ranthambore2.jpg",
+            "../img/ranthambore3.jpg"
+        ],
+        "bgClass": "ranthambore"
+    }
+]

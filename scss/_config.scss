@@ -1,0 +1,49 @@
+$dark-color: #2b2b2b;
+$light-color: #f4f4f4;
+$font-stack: Arial, Arial, Helvetica, sans-serif, sans-serif ;
+$font-weights:(
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+$p-size-sm: 1vw;
+$p-size-sm-hover: 1.1rem;
+$p-size-lg: 2rem;
+
+$h2-size-md: 1.5vw;
+$h2-size-lg: 2.25vw;
+
+$icon-sm: 1vw;
+$icon-sm-hover: .75vw;
+$icon-med: 1.75vw;
+$icon-med-hover: 2vw;
+$icon-lg: 4rem;
+$icon-lg-hover: 4.5rem;
+
+$controls-z: 9;
+
+@mixin flexIt($flex-flow, $justify-content, $align-items) {
+    display: flex;
+    flex-flow: $flex-flow;
+    justify-content: $justify-content;
+    align-items: $align-items;
+};
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

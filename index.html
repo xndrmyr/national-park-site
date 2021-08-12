@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10972a0537.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="css/hamburgers.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="controlWrapper">
+        <div class="left-control-tri"></div>
+        <div class="controls">
+            <div onclick="previous()"><i class="fas fa-chevron-left"></i></div>
+            <div><i class="fas fa-random" onclick="randomizer()"></i></div>
+            <div onclick="next()"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="right-control-tri"></div>
+    </div>
+<div id="ham-wrapper">
+    <button id="hamburger" class="hamburger hamburger--spin" type="button" onclick="navHandler()">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <div id="flex-wrapper">
+        <a href="#" class="one" onclick="clickHandler('one')">
+            <div id="card1"></div>
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <div id="cirText1">
+                    </div>
+                    <h2 id="park-name1"></h2>
+                    <div class="natPark">
+                        <i class="fas fa-star rotating"></i>
+                        <p>National Park</p>
+                        <i class="fas fa-star rotating"></i>
+                    </div>
+                </div>
+                <div class="additionalInfo">
+                    <div class="statWrap animate__animated animate__fadeInUp">
+                        <div class="statName">
+                            Coordinates:
+                        </div>
+                        <div class="stat" id="coords1">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="statName">
+                            Area:
+                        </div>
+                        <div class="stat" id="area1">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="statName">
+                            Established:
+                        </div>
+                        <div class="stat" id="est1">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="statName">
+                            Visitors:
+                        </div>
+                        <div class="stat" id="visitors1">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="statName">
+                            Fun fact:
+                        </div>
+                        <div class="stat" id="fact1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="two" onclick="clickHandler('two')">
+            <div id="card2"></div>
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <div id="cirText2">
+                    </div>
+                    <h2 id="park-name2"></h2>
+                    <div class="natPark"><i class="fas fa-star rotating"></i>
+                        <p>National Park</p><i class="fas fa-star rotating"></i>
+                    </div>
+                </div>
+                <div class="additionalInfo">
+                    <div class="statWrap animate__animated animate__fadeInUp">
+                        <div class="statName">
+                            Coordinates:
+                        </div>
+                        <div class="stat" id="coords2">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="statName">
+                            Area:
+                        </div>
+                        <div class="stat" id="area2">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="statName">
+                            Established:
+                        </div>
+                        <div class="stat" id="est2">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="statName">
+                            Visitors:
+                        </div>
+                        <div class="stat" id="visitors2">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="statName">
+                            Fun fact:
+                        </div>
+                        <div class="stat" id="fact2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="three" onclick="clickHandler('three')">
+            <div id="card3"></div>
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <div id="cirText3">
+                    </div>
+                    <h2 id="park-name3"></h2>
+                    <div class="natPark"><i class="fas fa-star rotating"></i>
+                        <p>National Park</p><i class="fas fa-star rotating"></i>
+                    </div>
+                </div>
+                <div class="additionalInfo">
+                    <div class="statWrap animate__animated animate__fadeInUp">
+                        <div class="statName">
+                            Coordinates:
+                        </div>
+                        <div class="stat" id="coords3">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="statName">
+                            Area:
+                        </div>
+                        <div class="stat" id="area3">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="statName">
+                            Established:
+                        </div>
+                        <div class="stat" id="est3">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="statName">
+                            Visitors:
+                        </div>
+                        <div class="stat" id="visitors3">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="statName">
+                            Fun fact:
+                        </div>
+                        <div class="stat" id="fact3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="four" onclick="clickHandler('four')">
+            <div id="card4"></div>
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <div id="cirText4">
+                    </div>
+                    <h2 id="park-name4"></h2>
+                    <div class="natPark"><i class="fas fa-star rotating"></i>
+                        <p>National Park</p><i class="fas fa-star rotating"></i>
+                    </div>
+                </div>
+                <div class="additionalInfo">
+                    <div class="statWrap animate__animated animate__fadeInUp">
+                        <div class="statName">
+                            Coordinates:
+                        </div>
+                        <div class="stat" id="coords4">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="statName">
+                            Area:
+                        </div>
+                        <div class="stat" id="area4">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="statName">
+                            Established:
+                        </div>
+                        <div class="stat" id="est4">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="statName">
+                            Visitors:
+                        </div>
+                        <div class="stat" id="visitors4">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="statName">
+                            Fun fact:
+                        </div>
+                        <div class="stat" id="fact4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="five" onclick="clickHandler('five')">
+            <div id="card5"></div>
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <div id="cirText5">
+                    </div>
+                    <h2 id="park-name5"></h2>
+                    <div class="natPark"><i class="fas fa-star rotating"></i>
+                        <p>National Park</p><i class="fas fa-star rotating"></i>
+                    </div>
+                </div>
+                <div class="additionalInfo">
+                    <div class="statWrap animate__animated animate__fadeInUp">
+                        <div class="statName">
+                            Coordinates:
+                        </div>
+                        <div class="stat" id="coords5">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="statName">
+                            Area:
+                        </div>
+                        <div class="stat" id="area5">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="statName">
+                            Established:
+                        </div>
+                        <div class="stat" id="est5">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="statName">
+                            Visitors:
+                        </div>
+                        <div class="stat" id="visitors5">
+                        </div>
+                    </div>
+                    <div class="statWrap animate__animated animate__fadeInUp animate__delay-4s">
+                        <div class="statName">
+                            Fun fact:
+                        </div>
+                        <div class="stat" id="fact5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div id="page-controls" class="not-visible">
+            <div id="back-arrow">
+                <i class="fas fa-chevron-circle-left" onclick="homeHandler()"></i>
+            </div>
+            <div id="down-arrow">
+                <i class="fas fa-chevron-down animate__animated animate__pulse animate__infinite"
+                        onclick="location.href='#slideshow-wrapper'"></i>
+            </div>
+        </div>
+        
+        <div id="drawer" class="closed">
+            <!-- <div id="dlink0" class="drawer-link">
+                <div id="image0" class=" drawer-image vatnajokull"></div>
+                <div id="content-wrapper0" class="drawer-content-wrapper">
+                <div id="title0" class="drawer-title">Vatnajokull</div>
+                <div id="location0" class="drawer-location">Oraefi, Iceland</div>
+            </div>
+            </div> -->
+        </div>
+        
+    </div>
+<div id="ss-visibility" class="not-displayed">
+    <div id="slideshow-wrapper">
+        <div id="topClip">
+            <div id="nav-text-counterweight"><h1 id="nav-text-blank"></h1></div>
+            <div class="ss-buttons" id="ss-buttons">
+            <!-- <div class="ss-controls" id="ss-home" onclick="homeHandler()"><i class="fas fa-home"></i></div> -->
+            <div class="ss-controls" id="ss-previous" onmouseover="navText('Previous')" onmouseleave="navText('')"><i class="fas fa-chevron-left"></i></div>
+            <div class="ss-controls" id="ss-pause" onmouseover="navText('Pause')" onmouseleave="navText('')"><i class="fas fa-pause"></i></div>
+            <div class="ss-controls" id="ss-next" onmouseover="navText('Next')" onmouseleave="navText('')"><i class="fas fa-chevron-right"></i></div>
+            <a href="#">
+                <div class="ss-controls" id="ss-totop" onmouseover="navText('To Top')" onmouseleave="navText('')"><i class="fas fa-chevron-up"></i></div>
+            </a>
+            
+        </div>
+    
+        <div id="nav-text-wrapper" class="hide-nav-text-bg"><h2 id="nav-text"></h2></div>
+
+    </div>
+        
+        
+        <div id="slideshow-overflow">
+            <div id="slideshow">
+                <div class="view-loaded" id="slides">
+                </div>
+            </div>
+        </div>
+
+        <div id="botClip"><div>
+            <p id="park-location-label"></p><h2 id="park-label"></h2><p>National Park</p>
+            
+        </div></div>
+        
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/circletype.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/arctext.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
