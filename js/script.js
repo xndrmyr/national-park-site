@@ -455,6 +455,6 @@ window.onload = function() {
   // }, 1500)
   setTimeout(() => {
     document.getElementById("loadScreen").className = "not-displayed"
-    }, 1750)
+    }, 250)
 
 }
