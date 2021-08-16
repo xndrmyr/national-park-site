@@ -8,15 +8,100 @@
     0% {
         transform: translateX(-300px);
     }
+
     100% {
         transform: translateX(0px);
     }
 }
 
-@for $i from 0 to 25 {
-    #dlink#{$i} {animation-delay: .05s*$i; transform: translateX(-300px);
+@keyframes bounceText {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
+
+@for $i from 0 to 25 {
+    #dlink#{$i} {
+        animation-delay: .05s*$i;
+        transform: translateX(-300px);
+    }
+}
+
+@for $i from 0 to 25 {
+    #load#{$i} {
+        animation-delay: .05s*$i;
+    }
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: $dark-color;
+    @include flexIt(column, center, center);
+    z-index: 98;
+    background: url('../img/loadingbg.jpg');
+    background-position: center center;
+
+    .loading-overlay {
+        background: linear-gradient(rgba($dark-color, .5));
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        position: absolute;
+    }
+
+    .author {
+        color: $light-color;
+        font-size: $p-size-lg*.75;
+        letter-spacing: 10px;
+        z-index: 100;
+
+        svg {
+            fill: $light-color;
+            position: absolute;
+            transform: scale(.75);
+        }
+    }
+
+    #loading-text {
+        @include flexIt(row, center, center);
+        line-height: 1.4;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        transition: .25s;
+        color: $light-color;
+        flex-grow: 3;
+        z-index: 100;
+
+    }
+
+    .proj-info {
+        color: $light-color;
+        font-size: 14px;
+        letter-spacing: 1px;
+        z-index: 100;
+
+        a {
+        color: white
+        }
+    }
+}
+
+.loadAnimation {
+    animation: bounceText .5s ease-in-out;
+}
+
 
 .initial-drawer-link {
     transform: translateX(-300px)
@@ -42,18 +127,19 @@ body {
     position: absolute;
     width: 100%;
 
-#hamburger {
-    @include flexIt(row, center, center);
-    position: relative;
-    z-index: 9;
-    height: 75px;
-    width: 75px;
-    transition: .25s;
-    backdrop-filter: saturate(130%) blur(10px);
-    background-color: rgba($dark-color, .5);
+    #hamburger {
+        @include flexIt(row, center, center);
+        position: relative;
+        z-index: 9;
+        height: 75px;
+        width: 75px;
+        transition: .25s;
+        backdrop-filter: saturate(130%) blur(10px);
+        background-color: rgba($dark-color, .5);
 
     }
-    .is-active{
+
+    .is-active {
         transform: translateX(100vw*.2);
     }
 }
@@ -66,33 +152,33 @@ body {
     overflow-x: hidden;
     transition: .25s;
     -webkit-scrollbar: $dark-color;
+
     &.open {
         width: 20%;
     }
+
     &.closed {
         width: 0;
     }
-    
+
 }
 
-#drawer::-webkit-scrollbar-track, body::-webkit-scrollbar-track
-{
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+#drawer::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
 
-#drawer::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
+#drawer::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
 }
 
-#drawer::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+#drawer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
 }
 
 .drawer-link {
@@ -104,7 +190,7 @@ body {
     border: 3px rgba($dark-color, 0) solid;
     transition: .25s;
     cursor: pointer;
-    min-height: 65px;
+
     &:hover {
         border-color: $light-color;
 
@@ -112,6 +198,7 @@ body {
             margin-left: 10px;
         }
     }
+
     .drawer-image {
         width: 25%;
         height: 100%;
@@ -119,14 +206,17 @@ body {
         background-position: center center;
         margin-right: 5%;
     }
+
     .drawer-content-wrapper {
         @include flexIt(column, center, flex-start);
         transition: .25s;
         width: 65%;
+
         .drawer-title {
             font-size: $h2-size-md;
             text-transform: uppercase;
         }
+
         .drawer-location {
             font-size: $p-size-sm;
         }
@@ -163,8 +253,10 @@ body {
         border: 5px rgba($light-color, .5) solid;
         background-color: rgba($dark-color, .75);
         transition: .25s;
+
         &:hover {
             border-color: rgba($light-color, .75);
+
             i {
                 font-size: $icon-med-hover;
             }
@@ -227,7 +319,12 @@ body {
         margin: .5em 0;
     }
 
-    p, #cirText1, #cirText2, #cirText3, #cirText4, #cirText5 {
+    p,
+    #cirText1,
+    #cirText2,
+    #cirText3,
+    #cirText4,
+    #cirText5 {
         // font-size: $p-size-sm-hover;
         transition: .25s;
     }
@@ -311,6 +408,7 @@ body {
         .natPark {
             @include flexIt(row, center, center);
             font-size: $p-size-sm;
+
             i {
                 font-size: $p-size-sm*.5;
             }
@@ -536,9 +634,11 @@ body {
         z-index: 0;
     }
 }
+
 .hide-nav-text-bg {
     transform: translateX(-100%);
 }
+
 .show-nav-text-bg {
     transform: translateX(0%);
 }
@@ -668,44 +768,60 @@ body {
     transition: .25s;
     z-index: 9;
     border: $light-color 10px solid;
+
     div {
         @include flexIt(row, center, center);
         margin-top: -32px;
     }
 }
-    #park-location-label {
-        text-transform: uppercase;
-        color: $light-color;
-        font-size: $p-size-lg;
-        letter-spacing: 7px;
-        p {
-            margin-top: -33px;
-        }
+
+#park-location-label {
+    text-transform: uppercase;
+    color: $light-color;
+    font-size: $p-size-lg;
+    letter-spacing: 7px;
+
+    p {
+        margin-top: -33px;
     }
-    #park-label {
-        text-transform: uppercase;
-        font-weight: bold;
-        z-index: 10;
-        color: $light-color;
-        font-size: $p-size-lg*2.5;
-        letter-spacing: 7px;
-    }
+}
+
+#park-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 10;
+    color: $light-color;
+    font-size: $p-size-lg*2.5;
+    letter-spacing: 7px;
+}
 
 
 @media screen and (max-width: 1100px) {
-    .controls > div {
+    .controls>div {
         width: 50px;
         height: 50px;
     }
+
     .open {
         min-width: 40%;
     }
 
-    .is-active{
+    .is-active {
         transform: translateX(100vw*.4) !important;
     }
+
     .drawer-link {
-        height: 75px;
+        min-height: 100px;
+    }
+
+    .drawer-title {
+        font-size: $h2-size-md*1.5 !important;
+        text-transform: uppercase;
+    }
+
+    .drawer-location {
+        font-size: $p-size-sm*1.5 !important;
+        letter-spacing: 1px;
     }
 }
 
@@ -717,6 +833,7 @@ body {
             width: 100%;
             height: 20%;
         }
+
         &:hover {
             width: 100%;
         }
@@ -730,7 +847,7 @@ body {
         min-width: 50%;
     }
 
-    .is-active{
+    .is-active {
         transform: translateX(100vw*.5) !important;
     }
 
@@ -742,6 +859,7 @@ body {
         font-size: $h2-size-md*2.5 !important;
         text-transform: uppercase;
     }
+
     .drawer-location {
         font-size: $p-size-sm*2.25 !important;
         letter-spacing: 1px;
@@ -750,7 +868,7 @@ body {
     .overlay {
         height: 100%;
         @include flexIt(row, center, center);
-    
+
         .overlay-inner {
             @include flexIt(column, center, center);
             margin-top: 0px;
@@ -760,23 +878,29 @@ body {
     #flex-wrapper a:hover {
         height: 40%;
         width: 100%;
+
         h2 {
             font-size: $h2-size-lg*1.5;
             line-height: 1.1em;
             transition: .25s;
             margin: .5em 0;
         }
-    
-        p, #cirText1, #cirText2, #cirText3, #cirText4, #cirText5 {
+
+        p,
+        #cirText1,
+        #cirText2,
+        #cirText3,
+        #cirText4,
+        #cirText5 {
             font-size: $p-size-sm-hover;
             transition: .25s;
         }
-    
+
         i {
             font-size: $icon-sm-hover;
             transition: .25s;
         }
-    
+
         .rotating {
             -webkit-animation: rotating 2s linear infinite;
             -moz-animation: rotating 2s linear infinite;
@@ -784,23 +908,24 @@ body {
             -o-animation: rotating 2s linear infinite;
             animation: rotating 2s linear infinite;
         }
-    
+
         .additionalInfo {
             @include flexIt(column nowrap, center, center);
             --animate-delay: .15s;
             text-shadow: 2px 2px 2px rgba(20, 20, 20, 1);
-    
+
             .stat {
                 font-family: 'Open Sans', sans-serif;
                 font-size: $p-size-sm*.75;
             }
         }
     }
+
     .selected {
         position: absolute;
         height: 100vh !important;
         z-index: $controls-z;
-    
+
         #card1,
         #card2,
         #card3,
@@ -809,37 +934,44 @@ body {
             opacity: 0;
             display: none;
         }
-    
+
         .overlay-inner {
             transition: .5s;
             margin-top: -25%;
-    
+
             h2 {
                 font-size: $h2-size-lg*2;
                 transition: .25s;
                 padding: 2vw 0;
             }
-    
-            p, #cirText1, #cirText2, #cirText3, #cirText4, #cirText5 {
+
+            p,
+            #cirText1,
+            #cirText2,
+            #cirText3,
+            #cirText4,
+            #cirText5 {
                 font-size: $p-size-sm*2;
                 // line-height: 5vw;
                 transition: .25s;
             }
-    
+
             i {
                 font-size: $icon-sm;
                 transition: .25s;
             }
         }
 
-        .additionalInfo{
+        .additionalInfo {
             min-width: 50%;
         }
 
-        .statName, .stat {
+        .statName,
+        .stat {
             font-size: 1.5vw;
         }
     }
+
     .not-selected {
         position: absolute;
         overflow: hidden;
@@ -848,18 +980,21 @@ body {
         width: 0px !important;
         height: 0px !important;
     }
+
     .ss-buttons i {
-            font-size: 2.5vw !important;
+        font-size: 2.5vw !important;
     }
 
     #park-location-label {
         font-size: $p-size-lg*.5;
         padding-top: 22px;
+
         p {
             display: flex;
             white-space: nowrap;
         }
     }
+
     #park-label {
         font-size: $p-size-lg*1.5;
         margin-top: -8px;

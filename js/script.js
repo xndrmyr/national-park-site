@@ -419,3 +419,42 @@ function drawerClick(n) {
   }
   navHandler();
 }
+
+
+var loadingString = "Getting things ready!";
+var loadingTarget = document.getElementById("loading-text")
+
+function readyTextHTML(str) {
+  var strArr = str.split("")
+  console.log(str)
+  for (var i = 0; i < strArr.length; i++) {
+    if (strArr[i] === " ") {
+      strArr[i] = "&nbsp;"
+    }
+    loadingTarget.insertAdjacentHTML("beforeend", 
+    "<div id='load" + i + "' class='loadAnimation'>" + strArr[i] + "</div>")    
+  }
+  console.log(loadingString.split("").length)
+}
+
+function readyTextClassToggle(ms) {
+  setInterval(() => {
+    for (var i = 0; i < loadingString.length; i++) {
+      document.getElementById("load" + i).classList.toggle("loadAnimation")
+    }
+  }, ms)
+}
+
+readyTextHTML(loadingString);
+readyTextClassToggle(1500);
+
+window.onload = function() {
+  setTimeout(() => {
+  document.getElementById("loadScreen").style.transition = ".25s";
+  document.getElementById("loadScreen").style.opacity = "0"
+  }, 1500)
+  setTimeout(() => {
+    document.getElementById("loadScreen").className = "not-displayed"
+    }, 1750)
+
+}
