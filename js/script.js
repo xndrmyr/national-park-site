@@ -449,12 +449,12 @@ readyTextHTML(loadingString);
 readyTextClassToggle(1500);
 
 window.onload = function() {
-  // setTimeout(() => {
+  setTimeout(() => {
   document.getElementById("loadScreen").style.transition = ".25s";
   document.getElementById("loadScreen").style.opacity = "0"
-  // }, 1500)
+  }, 1500)
   setTimeout(() => {
     document.getElementById("loadScreen").className = "not-displayed"
-    }, 250)
+    }, 1750)
 
 }
